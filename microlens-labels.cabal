@@ -1,0 +1,35 @@
+cabal-version:      2.2
+
+name:               microlens-labels
+version:            0.2.0.0
+synopsis:           microlens + OverloadedLabels
+description:        Support of OverloadedLabels for
+                    [microlens](http://hackage.haskell.org/package/microlens)
+                    together with Template Haskell code to automatically generate them.
+homepage:           https://github.com/BurningWitness/microlens-labels#readme
+bug-reports:        https://github.com/BurningWitness/microlens-labels/issues
+author:             Oleksii Divak
+maintainer:         Oleksii Divak <frozenwitness@gmail.com>
+category:           Data, Lenses
+copyright:          2022 Oleksii Divak
+license:            BSD-3-Clause
+license-file:       LICENSE
+build-type:         Simple
+
+source-repository head
+  type: git
+  location: git://github.com/burningwitness/microlens-labels.git
+
+library
+  exposed-modules:    Lens.Micro.Labels
+                      Lens.Micro.Labels.TH
+
+  hs-source-dirs:     src
+
+  ghc-options:        -Wall
+
+  build-depends:      base             >= 4.10  && < 4.17
+                    , template-haskell
+                    , th-abstraction
+
+  default-language:   Haskell98
