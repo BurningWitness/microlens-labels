@@ -6,6 +6,7 @@
            , KindSignatures
            , ScopedTypeVariables
            , TypeApplications
+           , TypeOperators
            , UndecidableInstances #-}
 
 {-# OPTIONS_GHC -fno-warn-orphans #-}
